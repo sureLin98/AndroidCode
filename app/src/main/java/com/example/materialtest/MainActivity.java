@@ -1,9 +1,6 @@
 package com.example.materialtest;
 
 import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
-import android.os.Build;
-import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -13,16 +10,16 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
+
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
+
 import android.util.Log;
-import android.view.Gravity;
+
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
+
 import android.widget.Toast;
 import android.support.v7.widget.Toolbar;
 
@@ -62,12 +59,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FloatingActionButton fab=(FloatingActionButton)findViewById(R.id.fab);
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        FloatingActionButton fab=findViewById(R.id.fab);
+        toolbar =  findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ImageView imageView = (ImageView) findViewById(R.id.image);
-        navigationView = (NavigationView) findViewById(R.id.nav_view);
+        drawerLayout =findViewById(R.id.drawer_layout);
+        //ImageView imageView = findViewById(R.id.image);
+        navigationView =  findViewById(R.id.nav_view);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
