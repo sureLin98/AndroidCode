@@ -20,6 +20,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import android.widget.ImageView;
 import android.widget.Toast;
 import android.support.v7.widget.Toolbar;
 
@@ -28,6 +29,7 @@ import java.util.List;
 import java.util.Random;
 
 import static java.lang.Thread.sleep;
+
 
 public class MainActivity extends AppCompatActivity {
 
